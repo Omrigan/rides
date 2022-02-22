@@ -15,5 +15,4 @@ func main() {
 	result := avgDists.GetAverageDistances(time.Date(2020, 1, 1, 0, 0, 0, 0, time.UTC),
 		time.Date(2020, 1, 2, 0, 0, 0, 0, time.UTC))
 	log.Println("result is", result)
-
 }
