@@ -9,6 +9,7 @@ Project includes two index versions:
    - An array with all rides ordered by its start time
    - A binary search is performed to limit search space to _candidates_ - rides which only started in given range
    - Then a full scan of the remaining rides is filtered to leave only rides which ended in given range
+   - Full scan can be parallelized
  
 ## Tradeoffs
 Taking into account the relative smallness of the dataset, it is reasonable to keep all data in memory. 
